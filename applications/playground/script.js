@@ -1,4 +1,4 @@
-import { of } from 'rxjs';
+import { interval, of, switchMap } from 'rxjs';
 import './playground';
 
-export const example$ = of(1, 2, 3, 4);
+export const example$ = interval(1000);
